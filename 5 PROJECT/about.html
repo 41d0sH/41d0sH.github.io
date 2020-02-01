@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="aboutStyle.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <div class="about">
+        <h1>About Me</h1>
+    </div>
+    <div class="container">
+        <img src="about.gif" alt="">
+        <p><h4>Hi, My name is Aldo. This simple Travel Guide Website is my first website project. This is my first step to ford into the world of coding. If you want to see my website, you can click the link <a href="index.html">here</a>. Actually my working background was not from coding world. My background was from network engineer and my daily basis in network infrastructure. My motivation is that I want to make a good application that can help people and I want to change my work into coding world. So that's why I join into Hacktiv8 web application online program and this my first step to make website project portfolio. I graduate from:</h4></p>
+        <div class="table">
+            <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">College</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Atma Jaya University</td>
+                    <td>2004</td>
+                    <td>2009</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>SMA Fons Vitae I</td>
+                    <td>2001</td>
+                    <td>2004</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>SMP Marsudirini</td>
+                    <td>1998</td>
+                    <td>2001</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+        </div>
+        <div>
+          <form class="needs-validation" novalidate>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" value="" required>
+              </div>
+            </div>  
+
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom01">Name</label>
+                <input type="text" class="form-control" id="validationCustom01" value="" required>
+                <div class="valid-feedback">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea (Max 200 character)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" value="" required maxlength="200"></textarea>
+            </div>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
+          
+          <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
+        </div>
+    </div>
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

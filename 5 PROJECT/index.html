@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Travel Guide Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+  </head>
+  <body>    
+    <!-- Navbar -->
+        <div id="navbar1">
+          <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a class="about" href="about.html">About</a>
+                  </li>
+                  <li>
+                    <li>
+                      <form>
+                        <button class="search" type="submit">Search</button>
+                        <input class="input1" type="text" placeholder="search">                       
+                     </form>
+                    </li>
+                    <li>
+                      <form>                        
+                        <input class="input2" type="text" placeholder="Total Price" readonly>
+                      </form>
+                    </li>
+                  </li>
+            </ul>            
+          </nav>
+        </div>
+        
+        <header> 
+            <h1 class="judul">TRAVEL GUIDE WEBSITE</h1>
+            <!-- Select-city button-->
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select City
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item klik1" >Bali</a>
+                <a class="dropdown-item klik2" >Raja Ampat</a>
+                <a class="dropdown-item klik3" >Bangka Belitung</a>
+              </div>
+            </div>
+            <div class="btn-group"> 
+        </header>
+        <section class="card-deck"> 
+            <div class="container">
+                <ul>
+                    <li>
+                        <img class="img" src="bali.jpg" alt="">
+                        <h3 class="card-title"><b>Bali</b></h3>
+                        <h5 class="card-text">Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs.</b></h5>
+                        <footer class="footer">
+                            <h5 class="hargaBali">Total Expenses: Rp 15,000,000 </h5> 
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                              See More
+                            </button>
+                            <button class="biayaBali btn btn-primary" type="submit">Add to Wishlist</button>
+                            <!-- Modal -->
+                            
+                            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalScrollableTitle"></h5>
+                                    <button class="biayaBali btn btn-primary" type="submit">Add to Wishlist</button>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div id="cariBali"  class="modal-body">
+                                    <img class="img" src="bali.jpg" alt="">
+                                    <h3 class="card-title"><b>Bali</b></h3>
+                                    Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs.<br><br>The island is home to religious sites such as cliffside Uluwatu Temple. To the south, the beachside city of Kuta has lively bars, while Seminyak, Sanur and Nusa Dua are popular resort towns. The island is also known for its yoga and meditation retreats. <br>
+                                    <footer class="footer">
+                                        <h5 class="">Total Expenses: Rp 15,000,000 </h5>
+                                    </footer>
+                                    
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button  type="button" class="btn btn-secondary" data-dismiss="modal">Teruskan Wishlist</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                        </footer>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul>
+                    <li>
+                        <img class="img" src="raja ampat.jpg" alt="">
+                        <h3 class="card-title"><b>Raja Ampat</b></h3>
+                        <h5 class="card-text">The Raja Ampat Islands are an Indonesian archipelago off the northwest tip of Bird’s Head Peninsula in West Papua.</b></h5>
+                        <footer class="footer">
+                            <h5 class="hargaRaja">Total Expenses: Rp 20,000,000 </h5> 
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable2">
+                              See More
+                            </button>
+                            <button class="biayaRaja btn btn-primary" type="submit">Add to Wishlist</button>
+                            <!-- Modal -->
+                            
+                            <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalScrollableTitle"></h5>
+                                    <button class="biayaRaja btn btn-primary" type="submit">Add to Wishlist</button>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div id="cariRaja" class="modal-body">
+                                      <img class="img" src="raja ampat.jpg" alt="">
+                                      <h3 class="card-title"><b>Raja Ampat</b></h3>
+                                      The Raja Ampat Islands are an Indonesian archipelago off the northwest tip of Bird’s Head Peninsula in West Papua.<br><br>Comprising hundreds of jungle-covered islands, Raja Ampat is known for its beaches and coral reefs rich with marine life. Ancient rock paintings and caves are on Misool Island, while the crimson bird of paradise lives on Waigeo Island. Batanta and Salawati are the archipelago’s other main islands.
+                                    <footer class="footer">
+                                        <h5>Total Expenses: Rp 20,000,000 </h5>
+                                    </footer>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Teruskan Wishlist</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                        </footer>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+              <ul>
+                  <li>
+                      <img class="img" src="bangka belitung.jpg" alt="">
+                      <h3 class="card-title"><b>Bangka Belitung</b></h3>
+                      <h5 class="card-text">The Bangka-Belitung Islands form an Indonesian province off the east coast of Sumatra.</b></h5>
+                      <footer class="footer">
+                          <h5 class="hargaBelitung">Total Expenses: Rp 10,000,000 </h5> 
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable3">
+                            See More
+                          </button>
+                          <button class="biayaBelitung btn btn-primary" type="submit">Add to Wishlist</button>
+                          <!-- Modal -->
+                          
+                          <div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalScrollableTitle"></h5>
+                                  <button class="biayaBelitung btn btn-primary" type="submit">Add to Wishlist</button>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div id="cariBelitung" class="modal-body">
+                                    <img class="img" src="bangka belitung.jpg" alt="">
+                                  <h3 class="card-title"><b>Bangka Belitung</b></h3>
+                                  The Bangka-Belitung Islands form an Indonesian province off the east coast of Sumatra. <br><br>Small islets surround the 2 main islands, Bangka and Belitung. Sandy beaches with large granite rock formations include Tanjung Tinggi Beach on Belitung island. Belitung’s Tanjung Kelayang Beach is a jumping-off point for Lengkuas Island, with its coral reef, colorful fish and colonial Dutch-built lighthouse.
+                                  <footer class="footer">
+                                      <h5>Total Expenses: Rp 10,000,000 </h5>
+                                  </footer>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Teruskan Wishlist</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>  
+                      </footer>
+                  </li>
+              </ul>
+          </div>
+        </section>
+        <!-- Wishlist Table -->
+        <section>
+          <div class="wishlistJudul">
+            <h1>YOUR WISHLIST</h1>
+          </div>
+          <div>
+            <h1 class="totalPrice"></h1>
+          </div>
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">City</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td class=city>Bali</td>
+                <td class="quantity1">0</td>
+                <td class="totalPrice1">0</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td class=city>Raja Ampat</td>
+                <td class="quantity2">0</td>
+                <td class="totalPrice2">0</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td class="city">Bangka Belitung</td>
+                <td class="quantity3">0</td>
+                <td class="totalPrice3">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </section> 
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="wishlistTotal.js" async></script>
+    <script src="wishlistCard.js" async></script>
+    <script src="searching.js" ></script>
+    <script src="selectCity.js"></script>
+  </body>
+</html>

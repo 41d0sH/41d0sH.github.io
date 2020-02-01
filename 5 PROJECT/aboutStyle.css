@@ -1,0 +1,31 @@
+body{
+    background-image: url(background.jpg);
+}
+
+.about{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.container{
+    
+    width: 800px;
+    margin:auto;
+    border: 1px solid black;
+    overflow: auto;
+    
+}
+
+h4{
+    text-align: justify;
+}
+
+img{
+    float: left;
+    margin: 10px;
+}
+
+.contact{
+    text-align: center;
+}
