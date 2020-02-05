@@ -13,12 +13,12 @@ for(let i=0; i<x.length; i++){
         //console.log(hasilBali)
         var total1=parseInt(hasilBali)*1000000
         arr.push(total1)
-        for(l=0;l<arr.length;l++){
+        for(var l=0;l<arr.length;l++){
             jumlahBali=jumlahBali+arr[l]
             document.getElementsByClassName("input2")[0].value = "Total Price:"+jumlahBali
             document.getElementsByClassName("totalPrice")[0].innerHTML = "TOTAL HARGA YANG HARUS DIBAYARKAN:Rp "+jumlahBali
             
-         }
+         } 
     } 
 }
 y=document.getElementsByClassName("biayaRaja")
@@ -36,11 +36,13 @@ for(let j=0; j<y.length; j++){
         arr.push(total2)
         //console.log(arr)
         
-        for(m=0;m<arr.length;m++){
+        for(var m=0;m<arr.length;m++){
            jumlahRaja=jumlahRaja+arr[m]  
            //console.log(jumlah2)
            document.getElementsByClassName("input2")[0].value = "Total Price:"+jumlahRaja
            document.getElementsByClassName("totalPrice")[0].innerHTML = "TOTAL HARGA YANG HARUS DIBAYARKAN:Rp "+jumlahRaja
+        
+    
         }   
     }
 }
@@ -61,7 +63,7 @@ for(let k=0; k<z.length; k++){
         arr.push(total3)
         //console.log(arr)
         
-        for(n=0;n<arr.length;n++){
+        for(var n=0;n<arr.length;n++){
            jumlahBelitung=jumlahBelitung+arr[n]  
            //console.log(jumlah2)
            document.getElementsByClassName("input2")[0].value = "Total Price:"+jumlahBelitung
@@ -69,4 +71,3 @@ for(let k=0; k<z.length; k++){
         }   
     }
 } 
-
