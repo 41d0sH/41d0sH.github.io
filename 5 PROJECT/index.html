@@ -27,16 +27,20 @@
                   <li>
                     <a class="about" href="about.html">About</a>
                   </li>
+                  <!--
                   <li>
                       <form>
                         <button class="search" type="submit">Search</button>
                         <input class="input1" type="text" placeholder="search">                       
                      </form>
-                  </li>
+                  </li>-->
                   <li>
                       <form>                        
                         <input class="input2" type="text" placeholder="Total Price" readonly>
                       </form>
+                  </li>
+                  <li>
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
                   </li>  
               </ul>
             </div>            
@@ -45,18 +49,7 @@
         
         <header> 
             <h1 class="judul">TRAVEL GUIDE WEBSITE</h1>
-            <!-- Select-city button-->
-            <div class="btn-group">
-              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select City
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item klik1" >Bali</a>
-                <a class="dropdown-item klik2" >Raja Ampat</a>
-                <a class="dropdown-item klik3" >Bangka Belitung</a>
-              </div>
-            </div>
-            <div class="btn-group"> 
+            
         </header>
         <section class="card-deck"> 
             <div class="container">
@@ -94,7 +87,7 @@
                                     
                                   </div>
                                   <div class="modal-footer">
-                                    <button  type="button" class="btn btn-secondary" data-dismiss="modal">Teruskan Wishlist</button>
+                                    <button  type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   </div>
                                 </div>
                               </div>
@@ -138,7 +131,7 @@
                                     </footer>
                                   </div>
                                   <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Teruskan Wishlist</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   </div>
                                 </div>
                               </div>
@@ -182,7 +175,7 @@
                                   </footer>
                                 </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Teruskan Wishlist</button>
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
                               </div>
                             </div>
@@ -239,7 +232,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="wishlistTotal.js" async></script>
     <script src="wishlistCard.js" async></script>
-    <script src="searching.js" ></script>
-    <script src="selectCity.js"></script>
+    <script src="searching.js"></script>
   </body>
 </html>
