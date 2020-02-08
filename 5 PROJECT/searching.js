@@ -1,18 +1,17 @@
 function myFunction() {
-  var input, filter, table, kata, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  //table = document.getElementById("myTable"); 
-  kata = document.getElementsByClassName("card-title");
+  var input, filter, table, kata, td, i, txtValue
+  input = document.getElementById("myInput")
+  filter = input.value.toUpperCase()
+  kata = document.getElementsByClassName("container")
 
   for (i = 0; i < kata.length; i++) {
-    td = kata[i].getElementsByTagName("b")[0];
+    td = kata[i].getElementsByTagName("b")[0]
     if (td) {
       txtValue = td.textContent || td.innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        kata[i].style.display = "";
+        kata[i].style.display = ""
       } else {
-        kata[i].style.display = "none";
+        kata[i].style.display = "none"
       }
     }       
   }
