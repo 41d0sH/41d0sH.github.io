@@ -14,8 +14,8 @@
   </head>
   <body>    
     <!-- Navbar -->
-        <div id="navbar1">
-          <nav class="navbar navbar-expand-lg">
+        <div id="navbar">
+          <nav class="navbar1 navbar-expand-lg">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,13 +27,6 @@
                   <li>
                     <a class="about" href="about.html">About</a>
                   </li>
-                  <!--
-                  <li>
-                      <form>
-                        <button class="search" type="submit">Search</button>
-                        <input class="input1" type="text" placeholder="search">                       
-                     </form>
-                  </li>-->
                   <li>
                       <form>                        
                         <input class="input2" type="text" placeholder="Total Price" readonly>
@@ -49,7 +42,17 @@
         
         <header> 
             <h1 class="judul">TRAVEL GUIDE WEBSITE</h1>
-            
+            <div class="btn-group dropdown">
+              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select City
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item dropBali" href="#">Bali</a>
+                <a class="dropdown-item dropRaja" href="#">Raja Ampat</a>
+                <a class="dropdown-item dropBelitung" href="#">Bangka Belitung</a>
+                <a class="dropdown-item dropSemua" href="#">Semua Kota</a>
+              </div>
+            </div>
         </header>
         <section class="card-deck"> 
             <div class="container">
@@ -58,7 +61,7 @@
                         <img class="img" src="bali.jpg" alt="">
                         <h3 class="card-title"><b>Bali</b></h3>
                         <h5 class="card-text">Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs.</b></h5>
-                        <footer class="footer">
+                        <footer class="footer card-footer">
                             <h5 class="hargaBali">Total Expenses: Rp 15,000,000 </h5> 
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
@@ -81,7 +84,7 @@
                                     <img class="img" src="bali.jpg" alt="">
                                     <h3 class="card-title"><b>Bali</b></h3>
                                     Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs.<br><br>The island is home to religious sites such as cliffside Uluwatu Temple. To the south, the beachside city of Kuta has lively bars, while Seminyak, Sanur and Nusa Dua are popular resort towns. The island is also known for its yoga and meditation retreats. <br>
-                                    <footer class="footer">
+                                    <footer class="footer card-footer">
                                         <h5 class="">Total Expenses: Rp 15,000,000 </h5>
                                     </footer>
                                     
@@ -103,7 +106,7 @@
                         <img class="img" src="raja ampat.jpg" alt="">
                         <h3 class="card-title"><b>Raja Ampat</b></h3>
                         <h5 class="card-text">The Raja Ampat Islands are an Indonesian archipelago off the northwest tip of Bird’s Head Peninsula in West Papua.</b></h5>
-                        <footer class="footer">
+                        <footer class="footer card-footer">
                             <h5 class="hargaRaja">Total Expenses: Rp 20,000,000 </h5> 
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable2">
@@ -126,7 +129,7 @@
                                       <img class="img" src="raja ampat.jpg" alt="">
                                       <h3 class="card-title"><b>Raja Ampat</b></h3>
                                       The Raja Ampat Islands are an Indonesian archipelago off the northwest tip of Bird’s Head Peninsula in West Papua.<br><br>Comprising hundreds of jungle-covered islands, Raja Ampat is known for its beaches and coral reefs rich with marine life. Ancient rock paintings and caves are on Misool Island, while the crimson bird of paradise lives on Waigeo Island. Batanta and Salawati are the archipelago’s other main islands.
-                                    <footer class="footer">
+                                    <footer class="footer card-footer">
                                         <h5>Total Expenses: Rp 20,000,000 </h5>
                                     </footer>
                                   </div>
@@ -147,7 +150,7 @@
                       <img class="img" src="bangka belitung.jpg" alt="">
                       <h3 class="card-title"><b>Bangka Belitung</b></h3>
                       <h5 class="card-text">The Bangka-Belitung Islands form an Indonesian province off the east coast of Sumatra.</b></h5>
-                      <footer class="footer">
+                      <footer class="footer card-footer">
                           <h5 class="hargaBelitung">Total Expenses: Rp 10,000,000 </h5> 
                           <!-- Button trigger modal -->
                           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable3">
@@ -170,7 +173,7 @@
                                     <img class="img" src="bangka belitung.jpg" alt="">
                                   <h3 class="card-title"><b>Bangka Belitung</b></h3>
                                   The Bangka-Belitung Islands form an Indonesian province off the east coast of Sumatra. <br><br>Small islets surround the 2 main islands, Bangka and Belitung. Sandy beaches with large granite rock formations include Tanjung Tinggi Beach on Belitung island. Belitung’s Tanjung Kelayang Beach is a jumping-off point for Lengkuas Island, with its coral reef, colorful fish and colonial Dutch-built lighthouse.
-                                  <footer class="footer">
+                                  <footer class="footer card-footer">
                                       <h5>Total Expenses: Rp 10,000,000 </h5>
                                   </footer>
                                 </div>
@@ -206,28 +209,28 @@
 
               <tr>
                 <th scope="row">1</th>
-                <td class=city1>Bali</td>
+                <td class=city>Bali</td>
                 <td class="quantity1">0</td>
                 <td class="totalPrice1">0</td>
-                <td><button class="batalBali" type="submit">Batalkan Bali</button></td>
+                <td><button class="batalBali batal" type="submit">Batalkan Bali</button></td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td class=city>Raja Ampat</td>
                 <td class="quantity2">0</td>
                 <td class="totalPrice2">0</td>
-                <td><button class="batalRaja" type="submit">Batalkan Raja</button></td>
+                <td><button class="batalRaja batal" type="submit">Batalkan Raja Ampat</button></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td class="city">Bangka Belitung</td>
                 <td class="quantity3">0</td>
                 <td class="totalPrice3">0</td>
-                <td><button class="batalBelitung" type="submit">Batalkan Belitung</button></td>
+                <td><button class="batalBelitung batal" type="submit">Batalkan Bangka-Belitung</button></td>
               </tr> 
             </tbody>
             <form>
-              <button class="beli" type="submit">Bayar</button>
+              <button class="beli" type="submit"><a href="index.html">Bayar</a> </button>
             </form>
           </table> 
         </section> 
@@ -241,5 +244,7 @@
     <script src="wishlistCard.js" async></script>
     <script src="searching.js"></script>
     <script src="tombolBayar.js"></script>
+    <script src="dropdown.js"></script>
+    
   </body>
 </html>

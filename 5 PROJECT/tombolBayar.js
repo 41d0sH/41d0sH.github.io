@@ -19,8 +19,8 @@ arr.push(total3)
 //console.log(tombol[0])
 tombol[0].addEventListener("click",beli)
     function beli(){ 
-        for(var l=0;l<arr.length;l++){
-            jumlah=jumlah+arr[l]
+        for(let l1=0;l1<arr.length;l1++){
+            jumlah=jumlah+arr[l1]
         } 
         document.getElementsByClassName("input2")[0].value = "Total Price: "+jumlah
         if(jumlah>0){

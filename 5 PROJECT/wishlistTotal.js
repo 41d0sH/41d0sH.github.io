@@ -1,4 +1,4 @@
-
+//Wishlist Total pada navbar dan kotak wishlist
 x=document.getElementsByClassName("biayaBali")
 var arr=[]          
 for(let i=0; i<x.length; i++){
@@ -6,13 +6,10 @@ for(let i=0; i<x.length; i++){
     x[i].addEventListener("click",hargaBali);
     
     
-    function hargaBali(){ 
-        //alert("KLIK 'BATALKAN BALI' jika tidak jadi")
-        
+    function hargaBali(){      
         var jumlahBali=0
         var hasil = document.getElementsByClassName("hargaBali")[0].innerHTML
         var hasilBali=hasil.replace("Total Expenses: Rp","")
-        //console.log(hasilBali)
         var total1=parseInt(hasilBali)*1000000
         arr.push(total1)
         for(var l=0;l<arr.length;l++){
@@ -23,7 +20,7 @@ for(let i=0; i<x.length; i++){
           
     }      
 }
-//tombol batal bali
+//tombol batal bali di navbar dan kotak wishlist
 batalkanTotal1 = document.getElementsByClassName("batalBali")
 batalkanTotal1[0].addEventListener("click", batalTotalBali)
 function batalTotalBali(){
@@ -35,10 +32,8 @@ function batalTotalBali(){
     }else{
         alert("Destinasi anda ke Bali sudah dibatalkan semuanya")
     }
-    
-    //console.log(arr)
-    
-    for(o=0; o<arr.length; o++){
+   
+    for(let o=0; o<arr.length; o++){
         batalTotalBali=batalTotalBali+parseInt(arr[o])
         //console.log(batalTotalBali)
         
@@ -48,7 +43,7 @@ function batalTotalBali(){
 }
     
 
-
+//Wishlist Total pada navbar dan kotak wishlist
 y=document.getElementsByClassName("biayaRaja")
 
 for(let j=0; j<y.length; j++){
@@ -56,7 +51,6 @@ for(let j=0; j<y.length; j++){
     y[j].addEventListener("click",hargaRaja);
     
     function hargaRaja(){
-        //alert("KLIK 'BATALKAN RAJA' jika tidak jadi")
         var jumlahRaja=0
         var hasil2 = document.getElementsByClassName("hargaRaja")[0].innerHTML
         var hasilRaja=hasil2.replace("Total Expenses: Rp","")
@@ -75,7 +69,7 @@ for(let j=0; j<y.length; j++){
     }
 }
 
-//tombol batal Raja
+//tombol batal Raja di navbar dan kotak wishlist
 batalkanTotal2 = document.getElementsByClassName("batalRaja")
 batalkanTotal2[0].addEventListener("click", batalTotalRaja)
 function batalTotalRaja(){
@@ -89,9 +83,9 @@ function batalTotalRaja(){
     
     //console.log(arr)
     
-    for(p=0; p<arr.length; p++){
+    for(let p=0; p<arr.length; p++){
         batalTotalRaja=batalTotalRaja+parseInt(arr[p])
-        console.log(batalTotalRaja)
+        //console.log(batalTotalRaja)
         
     }
     document.getElementsByClassName("input2")[0].value = "Total Price: "+batalTotalRaja
@@ -99,7 +93,7 @@ function batalTotalRaja(){
     
 }
 
-    
+//Wishlist Total pada navbar dan kotak wishlist    
 z=document.getElementsByClassName("biayaBelitung")
 
 for(let k=0; k<z.length; k++){
@@ -107,7 +101,6 @@ for(let k=0; k<z.length; k++){
     z[k].addEventListener("click",hargaBelitung);
     var total=0
     function hargaBelitung(){
-        //alert("KLIK 'BATALKAN BELITUNG' jika tidak jadi")
         var jumlahBelitung=0
         var hasil3 = document.getElementsByClassName("hargaBelitung")[0].innerHTML
         var hasilBelitung=hasil3.replace("Total Expenses: Rp","")
@@ -126,7 +119,7 @@ for(let k=0; k<z.length; k++){
     }
 } 
 
-//tombol batal Belitung
+//tombol batal Belitung di navbar dan kotak wishlist
 batalkanTotal3 = document.getElementsByClassName("batalBelitung")
 batalkanTotal3[0].addEventListener("click", batalTotalBelitung)
 function batalTotalBelitung(){
@@ -139,7 +132,7 @@ function batalTotalBelitung(){
     }
     
     //console.log(arr)
-    for(q=0; q<arr.length; q++){
+    for(let q=0; q<arr.length; q++){
         batalTotalBelitung=batalTotalBelitung+parseInt(arr[q])
         //console.log(batalTotalRaja)
         

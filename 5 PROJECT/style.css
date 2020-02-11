@@ -8,12 +8,12 @@ body{
 .navbar-toggler-icon{
     background-color: blue;
 }
-.navbar{
+.navbar1{
     display: inline-block;
     width: 100%;
 }
 
-#navbar1{
+#navbar{
     background-color:black;
     width:100%;
     display: inline-block;  
@@ -21,7 +21,7 @@ body{
 }
 
 
-#navbar1 ul li{
+#navbar ul li{
     
     display: inline-block;
     margin-top: 10px;
@@ -42,8 +42,9 @@ body{
     background-color: white;
     width: 400px;
     height: 500px;
-    margin: auto;
+    margin:auto;
     border: 2px solid black;
+    
 }
 .container ul li{
     display: inline;
@@ -60,7 +61,7 @@ img {
     text-align: justify;
 }
 
-.footer{
+.card-footer{
     border-top: 2px solid black;
 }
 
@@ -80,15 +81,21 @@ img {
 
 .beli{
     margin-left: 47%;
-    border: 2px solid black;
+    margin-bottom: 8px;
     font-size: 20px;
+    background-color: black;
+    color:white;
 }
 
 .batal{
-    margin-left: 2px;
-    border: 2px solid black;
+    
     font-size: 20px;
+    background-color: rgb(0, 102, 255);
+    color:white;
 }
 
-
+.dropdown{
+    margin-left: 47%;
+    
+}
    

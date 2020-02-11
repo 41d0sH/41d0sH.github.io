@@ -1,4 +1,4 @@
-
+    //Tombol add WishlistCard Bali
     klikBali=document.getElementsByClassName("biayaBali")
     var jumlahKlik1=1
     var arrTotal1=[]
@@ -20,7 +20,7 @@
             var totalKlik=0
             arrTotal1.push(total1)
             arrKlik1.push(jumlahKlik1)
-            for(i=0;i<arrTotal1.length;i++){
+            for(let i=0;i<arrTotal1.length;i++){
                 totalBali=totalBali+parseInt(arrTotal1[i])
                 totalKlik=totalKlik+parseInt(arrKlik1[i])
             }
@@ -40,7 +40,7 @@
                 var totalKlik=0
                 arrTotal1.pop()
                 arrKlik1.pop()
-                for(j=0;j<arrTotal1.length;j++){
+                for(let j=0;j<arrTotal1.length;j++){
                     totalBali=totalBali+parseInt(arrTotal1[j])
                     totalKlik=totalKlik+parseInt(arrKlik1[j])
                 }
@@ -49,7 +49,7 @@
                 
             }
     
-
+//Tombol add WishlistCard Raja Ampat
     klikRaja=document.getElementsByClassName("biayaRaja")
     var jumlahKlik2=1
     var arrTotal2=[]
@@ -70,7 +70,7 @@
             var totalKlik2=0
             arrTotal2.push(total2)
             arrKlik2.push(jumlahKlik2)
-            for(k=0;k<arrTotal2.length;k++){
+            for(let k=0;k<arrTotal2.length;k++){
                 totalRaja=totalRaja+parseInt(arrTotal2[k])
                 totalKlik2=totalKlik2+parseInt(arrKlik2[k])
             }
@@ -87,7 +87,7 @@
                 var totalKlik2=0
                 arrTotal2.pop()
                 arrKlik2.pop()
-                for(l=0;l<arrTotal2.length;l++){
+                for(let l=0;l<arrTotal2.length;l++){
                     totalRaja=totalRaja+parseInt(arrTotal2[l])
                     totalKlik2=totalKlik2+parseInt(arrKlik2[l])
                 }
@@ -97,7 +97,7 @@
             }   
             
 
-    
+//Tombol add WishlistCard Belitung    
     klikBelitung=document.getElementsByClassName("biayaBelitung")
     var jumlahKlik3=1
     var arrTotal3=[]
@@ -118,7 +118,7 @@
             var totalKlik3=0
             arrTotal3.push(total3)
             arrKlik3.push(jumlahKlik3)
-            for(k=0;k<arrTotal3.length;k++){
+            for(let k=0;k<arrTotal3.length;k++){
                 totalBelitung=totalBelitung+parseInt(arrTotal3[k])
                 totalKlik3=totalKlik3+parseInt(arrKlik3[k])
             }
@@ -136,7 +136,7 @@ function batalBelitung(){
     var totalKlik3=0
     arrTotal3.pop()
     arrKlik3.pop()
-    for(l=0;l<arrTotal3.length;l++){
+    for(let l=0;l<arrTotal3.length;l++){
         totalBelitung=totalBelitung+parseInt(arrTotal3[l])
         totalKlik3=totalKlik3+parseInt(arrKlik3[l])
     }
