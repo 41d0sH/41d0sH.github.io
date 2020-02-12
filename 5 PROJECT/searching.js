@@ -3,7 +3,6 @@ function myFunction() {
   input = document.getElementById("myInput")
   filter = input.value.toUpperCase()
   kata = document.getElementsByClassName("container")
-
   for (i = 0; i < kata.length; i++) {
     td = kata[i].getElementsByTagName("b")[0]
     if (td) {
